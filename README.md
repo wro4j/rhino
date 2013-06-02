@@ -3,7 +3,7 @@ Rhino
 Rhino is an open-source implementation of JavaScript written entirely in Java
 
 This project is an unofficial rhino distribution required by wro4j. 
-Since there wasn't any release for a long time, I decided to perform a release from the latest master branch. The released version has no patch applied and uses original sources as is.
+Since there wasn't any release for a long time, I decided to perform a release from the latest master branch. The released version has no patch applied and uses original sources as is. This project is useful until an official rhino release is available.
 
 Usage
 =====
