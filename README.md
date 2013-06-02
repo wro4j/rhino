@@ -25,3 +25,7 @@ Notice that the groupId is not the same as official one and the version uses the
 
 where ${rhino.version} - is the unofficial version of rhino (1.7R5)
 and ${timestamp} - the timestamp of the last commit from master branch (a kind of snapshot) from where the release was performed.
+
+Releasing:
+
+    mvn clean deploy -Psonatype-oss-release
