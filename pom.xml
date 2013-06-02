@@ -36,7 +36,17 @@
     <properties>        
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <rhino.submodule>submodule</rhino.submodule>
+        <junit.version>4.11</junit.version>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
     <build>
       <sourceDirectory>${rhino.submodule}</sourceDirectory>
