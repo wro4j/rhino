@@ -75,7 +75,16 @@
                   <include>toolsrc/**/*.java</include>
               </includes>
           </configuration>
-      </plugin>     
-  </plugins>
+      </plugin> 
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>2.7</version>
+        <configuration>            
+            <docfilessubdirs>false</docfilessubdirs>
+            <sourcepath>${rhino.submodule}/src/</sourcepath>
+        </configuration>
+    </plugin>    
+</plugins>
 </build>
 </project>
