@@ -8,6 +8,7 @@ Since there wasn't any release for a long time, I decided to perform a release f
 
 I've tested it with a large suite of tests (in wro4j-extensions module) and everything seems to work fine. If you have any issues, please open an issue or just let me know.
 
+Latest version:  *1.7R5-20130223-1*
 
 Usage
 =====
@@ -16,15 +17,16 @@ Include the following dependency to pom.xml:
     <dependency>
         <groupId>ro.isdc.wro4j</groupId>
         <artifactId>rhino</artifactId>    
-        <version>1.7R5-20130223</version>
+        <version>1.7R5-20130223-1</version>
     </dependency> 
     
 Notice that the groupId is not the same as official one and the version uses the following convention:
 
-    ${rhino.version}-${timestamp}
+    ${rhino.version}-${timestamp}-${patch}
 
-where ${rhino.version} - is the unofficial version of rhino (1.7R5)
-and ${timestamp} - the timestamp of the last commit from master branch (a kind of snapshot) from where the release was performed.
+  - ${rhino.version} - is the unofficial version of rhino (1.7R5)
+  - ${timestamp} - the timestamp of the last commit from master branch (a kind of snapshot) from where the release was performed.
+  - ${patch} - patch version (this segment will not always exist, only when a change is required).
 
 Releasing
 =====
