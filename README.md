@@ -26,6 +26,19 @@ Notice that the groupId is not the same as official one and the version uses the
 where ${rhino.version} - is the unofficial version of rhino (1.7R5)
 and ${timestamp} - the timestamp of the last commit from master branch (a kind of snapshot) from where the release was performed.
 
-Releasing:
+Releasing
+=====
+If the project is checked out for the first time, run:
+
+    git submodule init
+
+which will initialize the rhino git submodule.
+After that, fetch the latest sources from rhino official git repo:
+
+    git submodule update
+
+At this point, the release can be performed using latest sources.
+
+Run the following command
 
     mvn clean deploy -Psonatype-oss-release
